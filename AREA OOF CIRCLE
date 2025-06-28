@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class AreaofC {
+    public static void main(String[]args){
+        Scanner input = new Scanner(System.in);
+        double pi, radius, Area;
+        pi = 3.1416;
+        System.out.print("Enter the radius value: ");
+        radius = input.nextDouble();
+
+        Area = pi*radius;
+
+        System.out.print("Area of circle: "+Area);
+        input.close();
+     }
+  }
