@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class switchDemo {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n;
+        System.out.print("Enter the number: ");
+        n = input.nextInt();
+
+        switch(n)
+        {
+        case 1:
+        { 
+            System.out.print("One");
+            break;
+        }
+        case 2: 
+        { 
+            System.out.print("Two");
+            break;
+        }
+        case 3: 
+        { 
+            System.out.print("Three");
+            break;
+        }
+        
+        default : 
+            System.out.print("Number not found.");
+        
+        input.close();
+    }
+
+
+    }
+}
