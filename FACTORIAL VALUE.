@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class FactTr {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a,fact = 1;
+        System.out.print("Enter the factorial number : ");
+        a = input.nextInt();
+        for(int i = a; i>0; i--)
+        {
+            fact = fact*i;
+        }
+
+        System.out.print("Factorial value : "+fact);
+        
+    }
+}
