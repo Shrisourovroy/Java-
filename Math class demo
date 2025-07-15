@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class MclassDemo {
+    public static void main(String[]args)
+    {
+        int a,b;
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter two number: ");
+        a = in.nextInt();
+        b = in.nextInt();
+
+        int max = Math.max(a,b);
+        int min = Math.min(a,b);
+
+        System.out.println("Maximum: "+max);
+        System.out.println("Minimum: "+min);       
+    }
+    
+}
