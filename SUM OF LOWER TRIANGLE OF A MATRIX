@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class SumOfd {
+    public static void main(String[] args) {
+        int sum = 0;
+        int[][] A = new int[3][3];
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the A matrix element: \n");
+        for(int i=0; i<3; i++)
+        {
+            for(int j=0; j<3; j++)
+            {
+                System.out.printf("A[%d][%d] = ",i,j);
+                A[i][j] = input.nextInt();
+            }
+        }
+        System.out.println("Entered A matrix: ");
+        for(int i=0; i<3; i++)
+        {
+            for(int j=0; j<3; j++)
+            {
+                System.out.print(A[i][j]+" ");
+            }
+            System.out.print("\n");
+        }
+
+        for(int i=0; i<3; i++)
+        {
+            for(int j=0; j<3; j++)
+            {
+                if(i>j)
+                {
+                    sum = sum + A[i][j];
+                }
+            }
+        }
+        System.out.print("Sum of lower triangle : "+sum);
+
+    }
+}
