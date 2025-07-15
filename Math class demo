@@ -10,9 +10,13 @@ public class MclassDemo {
 
         int max = Math.max(a,b);
         int min = Math.min(a,b);
+        int absolute = Math.abs(a);
+        double power = Math.pow(a,b);
 
         System.out.println("Maximum: "+max);
-        System.out.println("Minimum: "+min);       
+        System.out.println("Minimum: "+min); 
+        System.out.println("Absolute vale of a: "+absolute);
+        System.out.println("Power : "+power);      
     }
     
 }
